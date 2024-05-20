@@ -1,0 +1,2 @@
+1. press "F1" -> No build tools -> Name project
+2. src mappa mellé be teszed a forásokat

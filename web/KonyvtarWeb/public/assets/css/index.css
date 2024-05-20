@@ -1,0 +1,70 @@
+body {
+    background-image: url("../images/Bg.jpg");
+    
+    background-repeat: no-repeat;
+
+    min-width: 400px;
+}
+
+
+h1{
+    background:rgb(161, 211, 54, 0.6);
+    font-size: 20rem;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
+
+img{
+    size: 50px;
+    display: inline-block;
+}
+
+#kep2{
+    transform: rotate(180deg);
+}
+
+.kepek{
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    border-color: #a1d336;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 3rem;
+}
+
+button{
+    background: transparent;
+    border: none !important;
+    cursor: pointer;
+}
+
+a{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 10rem;
+        margin-top: 2vh;
+        color: black;
+    }
+
+    .kepek{
+        border-style: none;
+        size: 100%;
+        margin-top: 5vh;
+    }
+
+    #kep2{
+        transform: rotate(0deg);
+    }
+
+    img{
+        width: 80%;
+        height: 80%;
+        display: list-item;
+    }
+  }

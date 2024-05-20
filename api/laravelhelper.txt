@@ -1,0 +1,6 @@
+1 php artisan install:api
+
+2 Database.php sqlite átirása mysql re
+
+
+https://szit.hu/doku.php?id=oktatas:web:back-end_framework:laravel:laravel_jegyzet#modellek
