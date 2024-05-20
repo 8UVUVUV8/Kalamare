@@ -1,4 +1,23 @@
-<p>kolcsonzesek works!</p>
-<button type="button" routerLink="/kolcsonzok" class="btn btn-primary">
-    valami
-</button>
+<div>
+        <div class="mb-3">
+            <label for="iro" class="form-label">iro</label>
+            <input type="text" class="form-control" id="iro" [(ngModel)]="iro" >
+        </div>
+        <div class="mb-3">
+            <label for="mufaj" class="form-label">mufaj</label>
+            <input type="text" class="form-control" id="mufaj" [(ngModel)]="mufaj">
+          </div>
+          <div class="mb-3">
+            <label for="cim" class="form-label">cim</label>
+            <input type="text" class="form-control" id="cim" [(ngModel)]="cim">
+          </div>
+        <button (click)="postKolcsonzes()" type="button" class="btn btn-primary">felvesz</button>
+</div>
+
+<div *ngFor="let kolcsonzes of kolcsonzesek">
+    <p>{{kolcsonzes.cim}}</p>
+    <p>{{kolcsonzes.iro}}</p>
+    <p>{{kolcsonzes.mufaj}}</p>
+    <button type="button" (click)="deleteKolcsonzes(kolcsonzes.kolcsonzes_id)">delete</button>
+</div>
+

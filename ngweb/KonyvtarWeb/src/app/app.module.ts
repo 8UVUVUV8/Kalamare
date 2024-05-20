@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { KolcsonzokComponent } from './kolcsonzok/kolcsonzok.component';
 import { KolcsonzesekComponent } from './kolcsonzesek/kolcsonzesek.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { KolcsonzesekComponent } from './kolcsonzesek/kolcsonzesek.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

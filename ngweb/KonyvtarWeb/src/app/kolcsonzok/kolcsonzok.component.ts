@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BaseService } from '../base.service';
+import { KolcsonzesekComponent } from '../kolcsonzesek/kolcsonzesek.component';
 
 @Component({
   selector: 'app-kolcsonzok',
@@ -10,7 +11,9 @@ export class KolcsonzokComponent {
   
   kolcsonzok: any[] = [];
 
-   latszik: boolean = false;
+   latszikid: any = null;
+
+   kolcsonzoId: any;
 
   constructor( private base : BaseService){}
 
@@ -23,16 +26,14 @@ export class KolcsonzokComponent {
   }
 
   kiIr(id:number){
-    console.log(id)
-    this.latszik = true;
-    console.log(this.latszik)
+    this.kolcsonzoId = id;
+    //localStorage.setItem("kolcsonzoid", id.toString())
+    this.latszikid = id;
+
   }
 
   bezar(){
-      this.latszik = false;
-      console.log(this.latszik)
+      this.latszikid = null;
   }
-  
-
 
 }

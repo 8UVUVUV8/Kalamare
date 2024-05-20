@@ -1,11 +1,10 @@
 <p>kolcsonzok works!</p>
 
-
-
 <li *ngFor="let kolcsonzo of kolcsonzok">
     <p>{{kolcsonzo.nev}}</p>
     <button type="button" (click)="kiIr(kolcsonzo.kolcsonzo_id)">kiIrGomb</button>
-    <div class="belsoDiv" *ngIf="latszik">
+    <div class="belsoDiv" *ngIf="kolcsonzo.kolcsonzo_id === latszikid">
+        <app-kolcsonzesek [kolcsonzoId]="kolcsonzoId"></app-kolcsonzesek>
         <button type="button" (click)="bezar()">Bezar</button>
     </div>
 </li>

@@ -6,7 +6,6 @@ import { KolcsonzokComponent } from './kolcsonzok/kolcsonzok.component';
 
 const routes: Routes = [
   {path: "home", component: HomeComponent},
-  {path: "kolcsonzesek", component: KolcsonzesekComponent},
   {path: "kolcsonzok", component: KolcsonzokComponent},
   {path: " ", component: HomeComponent},
   {path: "**", component: HomeComponent},
